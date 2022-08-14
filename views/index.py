@@ -144,7 +144,7 @@ def register():
         )
         return redirect(url_for("index_page.login"))
 
-    return render_template("register.html", countries=countries)
+    return render_template("register.html", countries=countries, get_country_name_by_id=get_country_name_by_id)
 
 
 # end user session
