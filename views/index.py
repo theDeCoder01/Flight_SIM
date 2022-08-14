@@ -108,6 +108,8 @@ def login():
 # route to allow new users to register
 @index_page.route("/register", methods=["GET", "POST"])
 def register():
+    countries = facade_base.get_all_countries()
+    
     if request.method == "POST":
         firstname = request.form.get("firstname")
         lastname = request.form.get("lastname")
@@ -142,7 +144,7 @@ def register():
         )
         return redirect(url_for("index_page.login"))
 
-    return render_template("register.html")
+    return render_template("register.html", countries=countries)
 
 
 # end user session
