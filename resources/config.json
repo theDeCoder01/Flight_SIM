@@ -1,0 +1,5 @@
+{
+    "SECRET_KEY": "!ajahagbabg262ytasbnakma",
+    "SQLALCHEMY_DATABASE_URI": "postgresql://mkikygxjqrmhfq:8dc75e17fa16751894cd2c29fc33c00e01cd6455ae30295636922ee43b038dc9@ec2-44-193-178-122.compute-1.amazonaws.com:5432/dc4eb1s8k22969"
+
+}
