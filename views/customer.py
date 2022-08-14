@@ -167,10 +167,11 @@ def add_ticket():
         ticket_error = None
         customer_facade = CustomerFacade(login_token)
         flight_id = request.args.get("flight_id")
-        print("flight id: ", flight_id, customer_facade._user_data["id"])
+        customer_id = get_customer_by_user_id(user_id =  customer_facade._user_data["id"]).id
+        print("flight id: ", flight_id, customer_id)
         #try:
         customer_facade.add_ticket(
-                flight_id=flight_id, customer_id=customer_facade._user_data["id"]
+                flight_id=flight_id, customer_id=customer_id
             )
         return redirect(url_for("customer_page.portal"))
         #except:
