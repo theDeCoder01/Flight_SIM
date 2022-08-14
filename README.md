@@ -16,3 +16,6 @@ python app.py
 
 Note:
 There is a "Pictures" file that contain country flags and profile pictures to use in the trial
+
+Note2:
+admin login is admin01 --> admin01 or admin02 --> admin02
