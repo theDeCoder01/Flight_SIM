@@ -98,6 +98,8 @@ class CustomerFacade(FacadeBase):
             # add the ticket to the database
             ticket = Ticket(**kwargs)
             session.add(ticket)
+            session.commit()
+            
             # decrease the remaaining_tickets from the flight
             flight = session.query(Flight).filter_by(id=ticket.flight_id).first()
             flight.remaining_tickets -= 1
