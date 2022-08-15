@@ -11,6 +11,9 @@ admin login is admin01 --> admin01 or admin02 --> admin02
 Note3:
 all passwords (except for admin) no less than 6 letters (as requested) and they are (12345678)
 
+Note4:
+usernames are case sensitive!
+
 
 #############################################
 
