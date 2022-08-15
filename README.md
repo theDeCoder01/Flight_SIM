@@ -1,3 +1,8 @@
+#################################################
+##########          My App:          ############
+########## flights-sim.herokuapp.com ############
+#################################################
+
 To initiate the database:
 
 python initialise_db.py
@@ -15,23 +20,19 @@ Note4:
 usernames are case sensitive!
 
 
-#############################################
+#################################################
 
 
 To run the project in a vertual enviroment, start by command:
-
 pip install -r requirements.txt
 
 Then, since we are using Postgres:
-
 pip install psycopg2
 
 (Don't forget to change back the CONFIG.JSON!!!)
 
 Then, to initiate the database:
-
 python initialise_db.py
 
 then, run the app:
-
 python app.py
